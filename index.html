@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, inidal-scale=1.0"/>
+    <title> Florence Taele - Portfolio</title>
+    
+    <style>
+        :root{
+            --bg: #0d1117;
+            --bg-alt: #161b22;
+            --border: #30363d;
+            --text: #e6edf3;
+            --text-muted: #7d8590;
+            --accent: #58a6ff;
+            --accent-soft: #a5d6ff;
+            --success: #3fb950;
+            --page-bg: #f6f6f4;
+        }
+
+        *{box-sizing: border-box;}
+        
+        body{
+            margin:0;
+            font-family: 'Times New Roman';
+            background: var(--page-bg);
+            color:#ffffff;
+        }
+        
+        .hero{
+            display: flex;
+            justify-content: center;
+            padding: 48px 20px;
+        }
+
+        .terminal{
+            width: 100%;
+            max-width:640px;
+            background: var(--bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        .terminal-border-bar{
+            display:flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 14px; 
+            background: var(--bg-alt);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .dot{
+            width: 11px;
+            height:11px;
+            border-radius: 50%;
+        }
+
+        .red{background: #e02015;}
+        .yellow{background: #ffbd2e;}
+        .green{background: #27c93f;}
+
+        .title-terminal{
+            color: var(--text-muted);
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        terminal-body{
+            padding: 32px, 28px, 40px; 
+        }
+
+        .prompt {
+            color: var(--accent);
+            font-size: 14px;
+            margin: 0 0 6px;
+        }
+        
+        .output{
+            color: var(--text);
+            font-size: 16px;
+            margin: 0 0 20px;
+            min-height: 20px;
+        }
+
+        .output.name {
+            font-size: 26px;
+            font-weight: 600; 
+            min-height: 32px;
+        }
+        
+        .output.tagline{
+            color: var(--accent-soft);
+        }
+
+        badge{
+            display: inline-flex; 
+            align-items: center; 
+            gap: 6px; 
+            background: rgba(63, 185, 80, 0.15);
+            color: var(--success);
+            font-size: 13px;
+            padding: 4px 10px;
+            border-radius: 999px;
+        }
+
+        .badge-dot{
+            width:6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--success);
+        }
+
+        .tags{
+            display: flex;
+            gap: 10px; 
+            flex-wrap: wrap; 
+            margin-top: 10px; 
+        }
+
+        .tag{
+            font-size: 12px;
+            border: 1px solid var(--border);
+            padding: 4px 10px;
+            border-radius: 6px;
+            color: var(--text-muted);
+        }
+
+        .cursor{
+            display: inline-block;
+            width: 8px; 
+            height: 16px; 
+            background: var(--accent);
+            vertical-align: -3px;
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyFrames blink { 50% { opacity: 0; }}
+
+        .section { 
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section h2{
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+
+        .section p{
+            line-height: 1.7;
+        }
+
+        footer { 
+            text-align: center; 
+            padding: 24px;
+            color: var(text-muted);
+            font-size: 12px;
+        }
+    
+    </style>
+
+<body>
+
+    <section class="hero">
+        <div class="terminal"> 
+            <div class="terminal-bar"> 
+                <span class="dot red"</span>
+                <span class="dot yellow"</span>
+                <span class="dot green"</span>
+                <span class="title-terminal">Florence@portfolio: ~</span>
+            </div>
+            <div class="terminal-body">
+                <p class="prompt">$whoami</p>
+                <p class="output name" id="typed-name"</p>
+
+                <p class="prompt">cat about.txt</p>
+                <p class="output tagline" id="typed-tagline"
+                
+                <p class="prompt">$ status --check</p>
+                <p class="output">
+                <span class="output">
+                    <span class="badge-dot"></span>
+                    Available for Summer Internship
+                </span>
+                </p
+            </div>
+            
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">C++</span>
+                <span class="tag">AWS</span>
+            </div>
+
+            <p class="prompt" style="margin-top:28px;">$ <span class="cursor"></span></p>
+        </div>
+    </section>
+
+    <!--Second section-->
+    <section class="section">
+        <h2>About</h2>
+        <p>Greetings, My name's Florence and have an passion 
+            for cloud computing and also...
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Florence Taele</p>
+    </footer>
+
+    <script>
+    const Name = "Florence"; 
+    const TAGLINE = "Cloud computing student, interest in building and managing platforms";
+
+function typeText(el, text, speed, delay){
+    setTimeout(() => {
+        let i = 0;
+        const interval = setInterval(() => {
+            el.textContent = text.slice(0, i +1);
+            i++;
+            if(i >= text.length) clearInterval(interval);
+        }, speed);
+    }, delay);
+}
+
+typeText(document.getElementById("typed-name"), NAME, 60, 300);
+typeText(document.getElementById("typed-tagline"), TAGLINE, 25, 300 + NAME.length & 60 + 400);
+    </script>
+
+    </body>
+
+</head>
+</html>
