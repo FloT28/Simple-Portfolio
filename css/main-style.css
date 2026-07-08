@@ -1,0 +1,191 @@
+  /*Main named color scheme menu*/
+  :root{
+            --bg: #0d1117;
+            --bg-alt: #161b22;
+            --border: #30363d;
+            --text: #e6edf3;
+            --text-muted: #ffffff;
+            --accent: #9adbfc;
+            --accent-soft: #d863d8;
+            --success: #3fb950;
+            --page-bg: #f6f6f4;
+        }
+
+        /*Box size - terminal*/
+        *{box-sizing: border-box;}
+        
+        /*Body Text for Website*/
+        body{
+            margin:0;
+            font-family: 'Courier New', Courier, monospace;
+            background: var(--page-bg);
+            color:#000000;
+        }
+        
+        /*Hero Section*/
+        .hero{
+            display: flex;
+            justify-content: center;
+            padding: 48px 20px;
+        }
+
+        /*Terminal style*/
+        .terminal{
+            width: 100%;
+            max-width:640px;
+            background: var(--bg);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+        
+        /*Terminal Bar style*/
+        .terminal-bar{
+            display:flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 14px; 
+            background: var(--bg-alt);
+            border-bottom: 1px solid var(--border);
+        }
+
+        /*Fake Mac dots for terminal*/
+        .dot{
+            width: 11px;
+            height:11px;
+            border-radius: 50%;
+        }
+
+        /*Mac styled dots - terminal*/
+        .red{background: #e02015;}
+        .yellow{background: #ffbd2e;}
+        .green{background: #27c93f;}
+
+        /*Terminal Title*/
+        .title-terminal{
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-left: 10px;
+            border-radius:50%;
+        }
+
+        /*Terminal Body positions*/
+        terminal-body{
+            padding: 32px, 28px, 40px; 
+        }
+
+        /*Prompt - heading of commands inside terminal*/
+        .prompt {
+            color: var(--accent);
+            font-size: 14px;
+            margin: 0 0 6px;
+        }
+        
+        /*output of website*/
+        .output{
+            color: var(--text);
+            font-size: 16px;
+            margin: 0 0 20px;
+            min-height: 20px;
+        }
+
+        /*Ouput - Name*/
+        .output.name {
+            font-size: 26px;
+            font-weight: 600; 
+            min-height: 32px;
+        }
+        
+        /*Tagline output color*/
+        .output.tagline{
+            color: var(--accent-soft);
+        }
+
+        /*Mac dot style - Terminal*/
+        badge{
+            display: inline-flex; 
+            align-items: center; 
+            gap: 6px; 
+            background: rgba(63, 185, 80, 0.15);
+            color: var(--success);
+            font-size: 13px;
+            padding: 4px 10px;
+            border-radius: 999px;
+        }
+
+        /*Mac style dot - terminal*/
+        .badge-dot{
+            width:6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--success);
+        }
+
+        /*tags - used for skill section*/
+        .tags{
+            display: flex;
+            gap: 10px; 
+            flex-wrap: wrap; 
+            margin-top: 10px; 
+        }
+
+        /*Main color - skill section*/
+        .tag{
+            font-size: 12px;
+            border: 1px solid var(--border);
+            padding: 4px 10px;
+            border-radius: 6px;
+            color: var(--text-muted);
+            background: #ab1492;
+            color:#ffffff;
+        }
+
+        /*Curosr section - live running style*/
+        .cursor{
+            display: inline-block;
+            width: 8px; 
+            height: 16px; 
+            background: var(--accent);
+            vertical-align: -3px;
+            animation: blink 1s step-end infinite;
+        }
+
+
+        @keyFrames blink { 50% { opacity: 0; }}
+
+        
+        .section { 
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section h2{
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+
+        .section p{
+            line-height: 1.7;
+        }
+
+        footer { 
+            text-align: center; 
+            padding: 24px;
+            color: var(text-muted);
+            font-size: 12px;
+        }
+    
+        .Heading { 
+            text-align:center;
+            color:#000000;
+            font-size:20;
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        .sub-heading{
+            color:#ffffff;
+            margin-left:6px;
+            font-size:18px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }

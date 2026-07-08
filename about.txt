@@ -1,0 +1,5 @@
+ Greetings, My name's Florence as I finish off this year in my degree of Software 
+            Engineering. To be honest, studying a variety of software topics has been an amazing experience for me! 
+            The new skills such as AI, Deployment in AWS has revealed to me what I potentially am interested in. 
+            Firstly, I am keen on building and deploying my side-projects on cloud such as either AWS, Netlify 
+            but also enhancing my code skills for an better use in the near future!
