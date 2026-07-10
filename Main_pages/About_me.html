@@ -15,23 +15,24 @@
     <body>
         <!--Navigation Bar-->
         <ul >
-            <li><a href="../Main_pages/About_me.html">About Me</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="About_me.html">About Me</a></li>
         </ul>
 
 
         <section class="hero">
 
-          <!--Image Icon - GitHub-->
+          <!--Image Icon - GitHub URL link-->
           <a href="https://github.com/FloT28" target="_blank" class="social-icon left">
             <img src="../images/Github.png" alt="Github Icon" class="icon-circle">
           </a>
 
           <img src="../images/profile.jpg" alt="Florence Taele" class="circle-img">
           <h1>Florence Taele</h1>
-          <p>Programmer & Cloud Infrastructure Student | Auckland, NZ</p>
+          <p style="font-size:20px;">Programmer & Cloud Infrastructure Student | Auckland, NZ</p>
           
-          <!--Image Icon - Linkedin-->
-          <a href="www.linkedin.com/in/florence-t-76202336b" target="_blank" class="social-icon right">
+          <!--Image Icon - Linkedin URL Link-->
+          <a href="https://www.linkedin.com/in/florence-t-76202336b" target="_blank" class="social-icon right" rel="noopener noreferrer">
             <img src="../images/Linkedin.png" alt="Linkedin Icon" class="icon-circle-2">
           </a>
 
@@ -39,35 +40,80 @@
         </section>
 
         <section class="about">
-          <h2>About Me</h2>
+          <h2 class="Heading">About Me</h2>
           <p>
             Hi, My name's Florence and I am currently in my final year of my 3 year degree in an Bachelor of Software Engineering. 
-            I am currently looking forward, to being able to enforce my current skills learnt to the workforce and also uphold to learn 
-            what is to be known in the future ahead
+            I am currently looking forward, to being able to enforce my current skills learnt into the workforce and also uphold to learn 
+            what is to be known in the future ahead and keep improving on my skills as well.
+
+            Outside of my Academics, I enjoy spending time playing my piano and also spending quality time with my family and siblings! 
+            I also love to get outside and explore the nature!
+
           </p>
-
-
+          <hr class="section-divide">
         </section>
 
-        <section class="projects">
-          <h2>Projects</h2>
+      <h2 class="Heading">Top Skillset</h2>
+      <hr class="section-divide">
+
+      <div class="card-grid">
+
+        <!--Top Skills-->
+        <div class="top-skills">
+          <div class="card-icon">
+            <h3 class="card-title">Top Skillset 1: Programming Languages</h3>
+            <img src="../images/Top_skill1.png" class="picture">
+          </div>
+        </div>
+
+        <!--Second top Skills-->
+        <div class="top-skills">
+          <div class="card-icon"></div>
+          <h3 class="card-title">Top Skillset 2: Deployment & Databases</h3>
+          <img src="../images/Top_skill2.png" class="picture">
+        </div>
+
+        <hr class="section-divide">
+
+      </div>
+        
+
+        <!--Projects Section-->
+        <div class="projects">
+          <h2 class="Heading">Projects</h2>
+
+          <!--Project 1: KiwiCo (Personal Side Project)-->
           <div class="project-card">
-            <h3>KiwiCo-Project</h3>
-            <p>Personal Project - This is an fitness based program that allows user to simple manage and add their workouts completed via an workout log system!</p>
+          <span class="status-dot incomplete"></span>
+             <h3>KiwiCo-Project</h3>
+            <p>Personal Project - This is an fitness based program that allows user to simple manage and add their workouts completed via an workout 
+              log system! | Find out more via Github!</p>
+              <div class="tags">
+                <span class="tag pl">Main Programming language: C++</span>
+                <span class="tag source">Source Code: GitHub</span>
+                <span class="tag date">Date: June 2026 - July 2026 (In-progress)</span>
+              </div>
           </div>
 
+          <!--Project 2: Learnova Website (AI summarization learning website)-->
           <div class="project-card">
-            <h3>University Project: Learnova</h3>
-            <p>Github only available: AI Summarization Learning Website for all learners for an in-depth study time</p>
-          </div>
-        </section>
+            <span class="status-dot"></span>
+              <h3>University Project: Learnova</h3>
+            <p> AI Summarization Learning Website for all learners for an in-depth study time | Find out more via Github!</p>
+            
+              <div class="tags">
+                <span class="tag pl">Main Programming language: FastAPI</span>
+                <span class="tag deploy">Deployment: Amazon Web Services (AWS)</span>
+                <span class="tag source">Source Code: GitHub</span>
+                <span class="tag date">Date:May 2026 - June 2026 (Completed) </span>
+              </div>
 
-        <!--Contact Section-->
-        <section class="contact">
-          <h2>Contact</h2>
-          <p>Email: florence.taele@gmail.com</p>
-          <p><a href="www.linkedin.com/in/florence-t-76202336b">LinkedIn</a></p>
-        </section>
+          </div>
+
+        </div>
+
+
+
 
     </body>
 </html>

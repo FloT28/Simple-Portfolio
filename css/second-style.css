@@ -63,20 +63,30 @@ h2{
 }
 
 .social-icon.left{
-  left:-190px;
-  bottom:-250px;
+  left:-100px;
+  bottom:-586px;
 }
 
 .social-icon.right{
-  right: -190px;
-  top:-154px;
+  right: -130px;
+  top: 90px;
+}
+
+/*project - card */
+.project{
+  width: 100%; 
+  padding: 40px;
+  box-sizing: border-box;
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
 }
 
 /*Github & Linkedin Icon*/
 .icon-circle,
 .icon-circle-2{
-  width:100px;
-  height: 100px;
+  width:150px;
+  height: 150px;
   border-radius:50%;
   object-fit:cover;
   background-color:#f0f0;
@@ -88,7 +98,7 @@ h2{
   display:flex;
   flex-direction:column;
   align-items:center;
-  font-size:large;
+  font-size:20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color:black;
 
@@ -101,7 +111,6 @@ h2{
   object-fit:contain;/*No stretch of photo*/
 }
 
-/*Line between sections*/
 
 
 paragraph{
@@ -132,11 +141,11 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #aac8f0;
   position: fixed;
   top: 0;
   left:0;
-  width:100%;
+  width:130%;
   z-index:1000;
 }
 
@@ -153,5 +162,158 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: #111111;
+  background-color: #070707;
+}
+
+/*Project Cards*/
+.project-card{
+  position: relative;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  width:100%;
+  max-width:none;
+  text-align:center;
+  box-sizing:border-box;
+}
+
+.project-card p{
+  width: 100%;
+  max-width:100%;
+  text-align:center;
+}
+
+.tags{
+  display:flex;
+  flex-wrap: wrap;
+  gap:8px;
+  margin-top: 10px;
+}
+
+.tag{
+  background: #f3cd98f0;
+  display: inline-block;
+  color: #333;
+  padding: 4px 14px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid #ddd;
+}
+
+/*Programming Language*/
+.tag.pl{
+  background-color:lightblue ;
+  color:white;
+}
+
+.tag.source{
+  background-color:rgb(245, 199, 93) ;
+  color:white;
+}
+
+.tag.deploy{
+  background-color:lightgreen ;
+  color:white;
+}
+
+.tag.date{
+  background-color:lightpink;
+  color:white;
+}
+
+.status-dot{
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  background:#22c55e; /*Live or Active Project + completed*/
+  display: inline-block;
+  margin-right: 8px;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2)
+}
+
+.status-dot.incomplete{
+  background:rgb(255, 165, 0);
+    box-shadow: 0 0 0 3px rgb(255, 165, 0, 0.2)
+
+}
+
+/*Circle icon for images*/
+.icon-badge{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -15px;
+  left: 20px;
+}
+
+/*Heading: for Projects*/
+.Heading{
+  text-align:center;
+  color:black;
+  font-family:'Times New Roman', Times, serif;
+  font-size:40px;
+}
+
+/*top-skills section*/
+.top-skills{
+  height:440px;
+  width:30%;
+  border: 3px solid #1d1d1d; /*Change Color*/ 
+  justify-content: center;
+  gap: 8px;
+  background: #f9f9f9;
+  border-radius: 16px;
+  box-sizing: border-box;
+
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+/*Top skills section: card icon*/
+.card-icon{ 
+  font-size: 32px;
+}
+
+/*Card Title*/
+.card-title{
+  margin: 0;
+  font-size: 1.1rem;
+  text-align:center
+}
+
+/*Card Text*/
+.card-text{
+  margin: 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/*Picture for Card*/
+.picture{
+  height:400px;
+  width:100%;
+}
+
+.card-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap:16px;
+  justify-content:center;
+  gap:16px;
+
+  max-width:1200px;
+  margin: 0 auto;
+}
+
+.section-divide{
+  border: none;
+  border-top: 1px solid #d9d9d9;
+  margin:24px 0;
 }
