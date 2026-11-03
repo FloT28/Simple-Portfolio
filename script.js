@@ -1,4 +1,4 @@
-const NAME = "Florence Taele";
+const NAME = "Florence Keki Kirimasi";
 const TAGLINE = "Hi, I'm an Software Engineer Student, interested in making an impact with my skills in coding and also infrastructure management with AWS and currently exploring Microsoft Azure!";
 const HEADLINE = "Available for Summer Internships & Graduate Programmes!"
 
